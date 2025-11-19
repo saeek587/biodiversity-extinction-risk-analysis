@@ -23,7 +23,7 @@ Analyzed **150,000+ species** from IUCN Red List data to quantify extinction ris
 - **Python**: Pandas, NumPy, Scikit-learn, Seaborn
 - **Statistical Methods**: Regression (linear, non-linear, logistic), Hypothesis Testing, Markov Chains, Random Forest
 - **Tools**: SPSS, Excel, LaTeX
-
+[View documentation in the docs folder](./report)
 ## 📁 Repository Structure
 ├── code/ # R and Python analysis scripts
 ├── visualizations/ # Key plots and figures
