@@ -10,7 +10,7 @@ library(nlstools)
 
 # Example seed data: remove this and insert your data
 set.seed(100)
-# total_sp <- c(8, 2, 36, 13, 9, 85, 88, 25, 143, 90, 91, 95, 109) # your country-level threatened species counts
+total_sp <- c(8, 2, 36, 13, 9, 85, 88, 25, 143, 90, 91, 95, 109) # your country-level threatened species counts
 
 fit_nb <- fitdist(total_sp, "nbinom")
 
