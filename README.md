@@ -29,7 +29,7 @@ Analyzed **150,000+ species** from IUCN Red List data to quantify extinction ris
 *   ## Visualizations
 
 ![Regression Curves](visualizations/regression_curves.png)
-![Distribution Fit](visualizations/distribution_fit.png)
+![Distribution Fit Plot](visualizations/distribution_fit.png)
 ![Markov Chain Diagram](visualizations/markov_chain_diagram.png)
 
 *   [report](./report) # Full project PDF
