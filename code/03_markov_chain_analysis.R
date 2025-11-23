@@ -4,8 +4,9 @@
 # Author: Saee Kurhade
 # ============================================
 
-install.packages("markovchain")
-library(markovchain)
+install.packages("markovchain");library(markovchain)
+install.packages("diagram"); library(diagram)
+install.packages("expm"); library(expm)
 
 # One-step Transition Probability Matrix for Reptiles:
 DD <- c(0, 0.611353712, 0.074235808, 0.082969432, 0.170305677, 0.061135371, 0, 0)
@@ -26,13 +27,16 @@ colnames(reptiles_matrix) <- states
 # Create Markov Chain object
 mc_reptiles <- new("markovchain", transitionMatrix=reptiles_matrix, states=states,
                   name="Reptile Conservation Status")
+mc_reptiles
 
 # Plot Markov Chain
 plot(mc_reptiles)
 
 # Calculate steady states
 ss <- steadyStates(mc_reptiles)
-print(ss)
+barplot(ss, main='Taxonomy - Reptiles', ylab='Prob. of attaining a particular consn. status in future',col='red')
+summary(mc_reptiles)
+simm = rmarkovchain(n=100,mc_repltiles,t0='NT'); simm
 
 # Save steady states and matrix for later use
 write.csv(reptiles_matrix, "reptiles_transition_matrix.csv")
