@@ -24,6 +24,7 @@ Analyzed **150,000+ species** from IUCN Red List data to quantify extinction ris
 - **Tools**: SPSS, Excel, LaTeX
 
 ## 📁 Repository Structure
+*   [data](./data) #All the resources
 *   [code](./code) # R and Python analysis scripts
 *   [visualizations](./visualizations) # Key plots and figures
 *   [report](./report) # Full project PDF
